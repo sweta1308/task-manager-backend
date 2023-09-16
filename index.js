@@ -10,11 +10,7 @@ const helmet = require("helmet");
 
 const app = express();
 
-app.use(
-  cors({
-    origin: "http://example.com",
-  })
-);
+app.use(cors());
 
 app.use(helmet());
 
